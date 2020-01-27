@@ -1,4 +1,5 @@
 import React from "react"
+import styled from "styled-components"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
@@ -15,7 +16,15 @@ const IndexPage = () => (
       <Image />
     </div>
     <Link to="/page-2/">Go to page 2</Link>
+    <Button>Test button</Button>
   </Layout>
 )
+
+const Button = styled.button`
+  background-color: pink;
+  color: red;
+  width: 200px;
+  height: 100px;
+`
 
 export default IndexPage
